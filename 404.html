@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Page not found — MineMech Solutions</title>
+<meta name="robots" content="noindex">
+<link rel="icon" type="image/x-icon" href="favicon.ico">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@700;800&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --navy-950:#070F17; --navy-900:#0B1D2B; --teal-500:#25B8AC; --teal-300:#8DDDD3; --slate-300:#A9BCC6;
+    --ff-display:'Archivo', sans-serif; --ff-body:'IBM Plex Sans', sans-serif; --ff-mono:'IBM Plex Mono', monospace;
+  }
+  *{box-sizing:border-box; margin:0; padding:0;}
+  body{
+    min-height:100vh; display:flex; align-items:center; justify-content:center; text-align:center;
+    background:linear-gradient(180deg, var(--navy-950), var(--navy-900));
+    color:#fff; font-family:var(--ff-body); padding:32px;
+  }
+  .wrap{ max-width:520px; }
+  .mono{ font-family:var(--ff-mono); font-size:12.5px; letter-spacing:0.14em; text-transform:uppercase; color:var(--teal-300); }
+  h1{ font-family:var(--ff-display); font-weight:800; font-size:clamp(32px,6vw,52px); margin:18px 0 14px; }
+  p{ color:var(--slate-300); font-size:16px; line-height:1.6; margin-bottom:30px; }
+  svg{ width:100%; height:auto; max-width:400px; margin:0 auto 30px; display:block; opacity:0.85; }
+  a.btn{
+    font-family:var(--ff-mono); font-size:13px; letter-spacing:0.05em; color:var(--navy-950);
+    background:var(--teal-500); padding:14px 28px; border-radius:2px; text-decoration:none; display:inline-block;
+  }
+  a.btn:hover{ background:var(--teal-300); }
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <svg viewBox="0 0 400 100" preserveAspectRatio="none">
+      <line x1="0" y1="50" x2="400" y2="50" stroke="#1A3A50" stroke-width="1"/>
+      <path d="M0,52 L18,20 L36,85 L54,30 L72,75 L90,25 L108,80 L126,40 L144,60 L162,45 L180,55 L198,48 L216,52 L234,49 L252,51 L270,50 L288,50.5 L400,50"
+        fill="none" stroke="#E08A5C" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+    <div class="mono">Error 404</div>
+    <h1>Signal lost.</h1>
+    <p>The page you're looking for doesn't exist — it may have moved, or the link may be out of date.</p>
+    <a class="btn" href="./">Back to Minemech Solutions</a>
+  </div>
+</body>
+</html>

@@ -1,0 +1,1001 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Minemech Solutions — Predictive Analytics &amp; Maintenance Partner for Mining Assets</title>
+<meta name="description" content="Minemech Solutions is a Botswana-incorporated, 100% citizen-owned predictive maintenance partner helping mines move from reactive firefighting to data-led, predictive operations.">
+
+<!-- Canonical / SEO — update this URL once your final domain (custom domain or *.github.io) is confirmed -->
+<link rel="canonical" href="https://www.minemech.co.bw/">
+
+<!-- Favicons -->
+<link rel="icon" type="image/x-icon" href="favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="assets/icons/favicon-16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="assets/icons/favicon-32.png">
+<link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="192x192" href="assets/icons/icon-192.png">
+<meta name="theme-color" content="#0B1D2B">
+
+<!-- Open Graph (LinkedIn, WhatsApp, Slack, Facebook link previews) -->
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="MineMech Solutions">
+<meta property="og:title" content="MineMech Solutions — Predictive Analytics &amp; Maintenance Partner for Mining Assets">
+<meta property="og:description" content="Botswana-incorporated, 100% citizen-owned predictive maintenance partner helping mines move from reactive firefighting to data-led, predictive operations.">
+<meta property="og:url" content="https://www.minemech.co.bw/">
+<meta property="og:image" content="https://www.minemech.co.bw/assets/icons/icon-512.png">
+<meta property="og:image:width" content="512">
+<meta property="og:image:height" content="512">
+<meta property="og:locale" content="en_GB">
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="MineMech Solutions — Predictive Analytics &amp; Maintenance Partner for Mining Assets">
+<meta name="twitter:description" content="Botswana-incorporated, 100% citizen-owned predictive maintenance partner helping mines move from reactive firefighting to data-led, predictive operations.">
+<meta name="twitter:image" content="https://www.minemech.co.bw/assets/icons/icon-512.png">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;600;700;800;900&family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --navy-950:#070F17;
+    --navy-900:#0B1D2B;
+    --navy-800:#122A3C;
+    --navy-700:#1A3A50;
+    --teal-600:#178B82;
+    --teal-500:#25B8AC;
+    --teal-300:#8DDDD3;
+    --teal-100:#DCF5F1;
+    --gold-500:#C79A34;
+    --gold-300:#E4C874;
+    --paper-50:#F6F5F1;
+    --paper-100:#EFEDE6;
+    --ink-900:#0E1B24;
+    --ink-700:#374954;
+    --slate-300:#A9BCC6;
+    --slate-400:#7E93A0;
+    --line-dark:rgba(141,221,211,0.16);
+    --line-light:rgba(14,27,36,0.12);
+    --shadow-1: 0 20px 60px rgba(7,15,23,0.35);
+    --radius-s: 4px;
+    --radius-m: 8px;
+    --ff-display:'Archivo', sans-serif;
+    --ff-body:'IBM Plex Sans', sans-serif;
+    --ff-mono:'IBM Plex Mono', monospace;
+  }
+
+  *{box-sizing:border-box; margin:0; padding:0;}
+  html{scroll-behavior:smooth;}
+  body{
+    font-family:var(--ff-body);
+    background:var(--paper-50);
+    color:var(--ink-900);
+    line-height:1.6;
+    -webkit-font-smoothing:antialiased;
+    overflow-x:hidden;
+  }
+  img{max-width:100%; display:block;}
+  h1,h2,h3,h4,p,a,li,span,div,button,input,select,textarea{ overflow-wrap:break-word; }
+  a{color:inherit; text-decoration:none;}
+  ul{list-style:none;}
+  section{position:relative;}
+  .container{
+    max-width:1180px;
+    margin:0 auto;
+    padding:0 32px;
+  }
+  @media (max-width:640px){ .container{padding:0 22px;} }
+
+  ::selection{ background:var(--teal-500); color:#fff; }
+
+  /* Reduced motion */
+  @media (prefers-reduced-motion: reduce){
+    *{animation-duration:0.001ms !important; animation-iteration-count:1 !important; transition-duration:0.001ms !important; scroll-behavior:auto !important;}
+  }
+
+  /* ---------- Typography ---------- */
+  .eyebrow{
+    font-family:var(--ff-mono);
+    font-size:12.5px;
+    letter-spacing:0.14em;
+    text-transform:uppercase;
+    font-weight:500;
+    display:inline-flex;
+    align-items:center;
+    gap:10px;
+  }
+  .eyebrow::before{
+    content:"";
+    width:22px; height:1px;
+    background:currentColor;
+    opacity:0.6;
+  }
+  h1,h2,h3,h4{
+    font-family:var(--ff-display);
+    font-weight:800;
+    letter-spacing:-0.01em;
+    line-height:1.08;
+    color:var(--ink-900);
+  }
+  h2{ font-size:clamp(28px,3.6vw,42px); }
+  h3{ font-size:20px; font-weight:700; }
+  .section-head{ max-width:640px; margin-bottom:52px; }
+  .section-head h2{ margin-top:14px; }
+  .section-head p{ margin-top:16px; color:var(--ink-700); font-size:16.5px; max-width:560px; }
+  .on-dark h2, .on-dark h3, .on-dark h4{ color:#fff; }
+  .on-dark p{ color:var(--slate-300); }
+  .on-dark .eyebrow, .eyebrow.on-dark{ color:var(--teal-300); }
+  .on-light .eyebrow, .eyebrow.on-light{ color:var(--teal-600); }
+
+  .btn{
+    font-family:var(--ff-mono);
+    font-size:13px;
+    letter-spacing:0.05em;
+    font-weight:500;
+    padding:14px 26px;
+    border-radius:2px;
+    display:inline-flex;
+    align-items:center;
+    gap:10px;
+    border:1px solid transparent;
+    cursor:pointer;
+    transition:transform .18s ease, background .18s ease, border-color .18s ease, color .18s ease;
+    white-space:nowrap;
+    max-width:100%;
+    text-align:center;
+    justify-content:center;
+  }
+  .btn:hover{ transform:translateY(-1px); }
+  .btn-primary{ background:var(--teal-500); color:var(--navy-950); }
+  .btn-primary:hover{ background:var(--teal-300); }
+  .btn-ghost-dark{ border-color:rgba(255,255,255,0.28); color:#fff; }
+  .btn-ghost-dark:hover{ border-color:var(--teal-300); color:var(--teal-300); }
+  .btn-ghost-light{ border-color:rgba(14,27,36,0.22); color:var(--ink-900); }
+  .btn-ghost-light:hover{ border-color:var(--teal-600); color:var(--teal-600); }
+  .btn svg{ width:14px; height:14px; }
+
+  /* ---------- Nav ---------- */
+  header{
+    position:fixed; top:0; left:0; right:0; z-index:100;
+    padding:20px 0;
+    transition:padding .3s ease, background .3s ease, box-shadow .3s ease;
+  }
+  header .container{ display:flex; align-items:center; justify-content:space-between; }
+  header.scrolled{
+    padding:12px 0;
+    background:rgba(7,15,23,0.92);
+    backdrop-filter:blur(10px);
+    box-shadow:0 8px 30px rgba(0,0,0,0.25);
+  }
+  .brand{ display:flex; align-items:center; gap:10px; }
+  .brand-mark{ width:34px; height:34px; flex-shrink:0; }
+  .brand-word{ font-family:var(--ff-display); font-weight:800; font-size:15px; letter-spacing:0.13em; color:#fff; }
+  .brand-word span{ color:var(--teal-300); font-weight:500; display:block; font-size:9.5px; letter-spacing:0.32em; margin-top:1px; }
+
+  nav.primary-nav ul{ display:flex; gap:34px; }
+  nav.primary-nav a{
+    font-family:var(--ff-mono); font-size:12.5px; letter-spacing:0.04em;
+    color:var(--slate-300); position:relative; padding:4px 0;
+    transition:color .2s ease;
+  }
+  nav.primary-nav a:hover{ color:#fff; }
+  nav.primary-nav a::after{
+    content:""; position:absolute; left:0; bottom:0; width:0; height:1px;
+    background:var(--teal-300); transition:width .25s ease;
+  }
+  nav.primary-nav a:hover::after{ width:100%; }
+
+  .nav-cta{ display:flex; align-items:center; gap:22px; }
+  .nav-toggle{ display:none; flex-direction:column; gap:5px; background:none; border:none; cursor:pointer; padding:6px; }
+  .nav-toggle span{ width:22px; height:2px; background:#fff; display:block; }
+
+  @media (max-width:920px){
+    nav.primary-nav{
+      position:fixed; inset:0; top:0; background:var(--navy-950);
+      display:flex; align-items:center; justify-content:center;
+      opacity:0; pointer-events:none; transition:opacity .25s ease;
+    }
+    nav.primary-nav.open{ opacity:1; pointer-events:all; }
+    nav.primary-nav ul{ flex-direction:column; text-align:center; gap:28px; }
+    nav.primary-nav a{ font-size:18px; }
+    .nav-cta .btn-primary{ display:none; }
+    .nav-toggle{ display:flex; }
+  }
+
+  /* ---------- Hero ---------- */
+  .hero{
+    background:linear-gradient(180deg, var(--navy-950) 0%, var(--navy-900) 55%, var(--navy-900) 100%);
+    color:#fff;
+    padding:168px 0 120px;
+    position:relative;
+    overflow:hidden;
+  }
+  .hero::before{
+    content:"";
+    position:absolute; inset:0;
+    background-image:
+      radial-gradient(ellipse 700px 400px at 82% 12%, rgba(37,184,172,0.16), transparent 60%),
+      radial-gradient(ellipse 500px 500px at 100% 90%, rgba(199,154,52,0.08), transparent 60%);
+    pointer-events:none;
+  }
+  .hero-grid{
+    display:grid; grid-template-columns:1.05fr 0.85fr; gap:60px; align-items:center;
+    position:relative; z-index:2;
+  }
+  .hero-eyebrow{ color:var(--teal-300); margin-bottom:22px; }
+  .hero h1{
+    font-size:clamp(34px,4.6vw,58px);
+    color:#fff;
+    max-width:640px;
+  }
+  .hero h1 em{
+    font-style:normal;
+    background:linear-gradient(92deg, var(--teal-300), var(--gold-300));
+    -webkit-background-clip:text; background-clip:text; color:transparent;
+  }
+  .hero p.lead{
+    margin-top:24px; font-size:17.5px; color:var(--slate-300); max-width:500px;
+  }
+  .hero-actions{ margin-top:38px; display:flex; gap:16px; flex-wrap:wrap; }
+  .hero-stats{
+    margin-top:56px; display:flex; gap:0; border-top:1px solid var(--line-dark);
+    padding-top:26px; max-width:520px;
+  }
+  .hero-stats div{ flex:1; padding-right:20px; }
+  .hero-stats .num{ font-family:var(--ff-mono); font-size:26px; color:var(--teal-300); font-weight:600; }
+  .hero-stats .lbl{ font-size:12.5px; color:var(--slate-400); margin-top:4px; letter-spacing:0.02em; }
+
+  .hero-visual{ position:relative; }
+  .wave-card{
+    background:var(--navy-800);
+    border:1px solid var(--line-dark);
+    border-radius:6px;
+    padding:26px 26px 10px;
+    box-shadow:var(--shadow-1);
+  }
+  .wave-card .wave-label{
+    display:flex; justify-content:space-between; align-items:baseline;
+    font-family:var(--ff-mono); font-size:11px; color:var(--slate-400); letter-spacing:0.06em;
+    margin-bottom:6px; text-transform:uppercase;
+  }
+  .wave-card svg{ width:100%; height:auto; display:block; }
+  .wave-caption{
+    display:flex; justify-content:space-between;
+    font-family:var(--ff-mono); font-size:11px; color:var(--slate-400);
+    padding:14px 2px 4px; border-top:1px solid var(--line-dark); margin-top:6px;
+  }
+  .wave-caption .before{ color:#E08A5C; }
+  .wave-caption .after{ color:var(--teal-300); }
+
+  /* ---------- Marquee strip ---------- */
+  .strip{
+    background:var(--navy-950); border-top:1px solid var(--line-dark); border-bottom:1px solid var(--line-dark);
+    padding:16px 0; overflow:hidden;
+  }
+  .strip-track{
+    display:flex; gap:56px; white-space:nowrap; width:max-content;
+    animation:scrollX 32s linear infinite;
+    font-family:var(--ff-mono); font-size:12.5px; color:var(--slate-400); letter-spacing:0.05em;
+  }
+  .strip-track span{ display:flex; align-items:center; gap:10px; }
+  .strip-track span::before{ content:"◆"; color:var(--teal-500); font-size:8px; }
+  @keyframes scrollX{ from{ transform:translateX(0);} to{ transform:translateX(-50%);} }
+
+  /* ---------- Generic section paddings ---------- */
+  .section{ padding:110px 0; }
+  @media (max-width:720px){ .section{ padding:78px 0; } }
+  @media (max-width:900px){
+    .hero{ padding:132px 0 80px; }
+    .hero-grid{ grid-template-columns:1fr; gap:52px; }
+    .hero-visual{ order:-1; }
+    .about-grid{ grid-template-columns:1fr; gap:48px; }
+    .cta-grid{ grid-template-columns:1fr; gap:48px; }
+  }
+  @media (max-width:480px){
+    .form-row{ grid-template-columns:1fr; }
+    .hero-stats{ flex-wrap:wrap; gap:18px 0; }
+    .hero-stats div{ flex:1 1 45%; }
+    .hero-actions .btn{ width:100%; white-space:normal; }
+    .contact-form{ padding:26px 20px; }
+  }
+  .on-dark.section{ background:var(--navy-900); color:#fff; }
+
+  /* ---------- Challenge ---------- */
+  .challenge-cards{
+    display:grid; grid-template-columns:repeat(3,1fr); gap:1px;
+    background:var(--line-light); border:1px solid var(--line-light);
+  }
+  .challenge-card{ background:var(--paper-50); padding:38px 32px; }
+  .challenge-card .idx{
+    font-family:var(--ff-mono); font-size:12px; color:var(--teal-600);
+    letter-spacing:0.08em;
+  }
+  .challenge-card h3{ margin-top:16px; }
+  .challenge-card p{ margin-top:12px; color:var(--ink-700); font-size:15px; }
+  .challenge-foot{
+    margin-top:40px; padding:26px 32px; background:var(--navy-900); color:#fff;
+    font-family:var(--ff-display); font-weight:600; font-size:18px; line-height:1.4;
+    border-left:3px solid var(--teal-500);
+  }
+  .challenge-foot span{ color:var(--teal-300); }
+  @media (max-width:860px){ .challenge-cards{ grid-template-columns:1fr; } }
+
+  /* ---------- About ---------- */
+  .about-grid{ display:grid; grid-template-columns:1fr 1fr; gap:70px; align-items:start; }
+  .about-copy p{ color:var(--ink-700); font-size:16px; margin-top:16px; }
+  .about-copy p:first-of-type{ margin-top:0; }
+  .stat-row{ display:grid; grid-template-columns:repeat(3,1fr); gap:20px; margin-top:40px; }
+  .stat-box{
+    border:1px solid var(--line-light); padding:22px 18px; border-radius:4px;
+    border-top:2px solid var(--teal-500);
+  }
+  .stat-box .num{ font-family:var(--ff-mono); font-size:24px; font-weight:600; color:var(--navy-900); }
+  .stat-box .lbl{ font-size:12.5px; color:var(--ink-700); margin-top:6px; }
+  .about-panel{
+    background:var(--navy-900); color:#fff; padding:40px 36px; border-radius:6px;
+    position:relative; overflow:hidden;
+  }
+  .about-panel h4{ font-size:14px; font-family:var(--ff-mono); letter-spacing:0.06em; color:var(--teal-300); text-transform:uppercase; margin-bottom:22px; font-weight:500;}
+  .about-panel ol{ counter-reset:step; }
+  .about-panel li{
+    counter-increment:step; display:flex; gap:16px; padding:16px 0;
+    border-top:1px solid var(--line-dark); font-size:14.5px; color:var(--slate-300);
+  }
+  .about-panel li:first-child{ border-top:none; }
+  .about-panel li::before{
+    content:counter(step,decimal-leading-zero); font-family:var(--ff-mono);
+    color:var(--teal-300); font-size:13px; flex-shrink:0; padding-top:1px;
+  }
+  .about-panel li strong{ color:#fff; display:block; margin-bottom:2px; font-weight:600; }
+
+  /* ---------- Approach / Waveform timeline ---------- */
+  .approach{ background:var(--paper-100); }
+  .timeline-wave{ width:100%; height:auto; margin:10px 0 -6px; display:block; }
+  .phase-grid{ display:grid; grid-template-columns:repeat(4,1fr); gap:22px; margin-top:8px; }
+  .phase-card{
+    background:var(--paper-50); border:1px solid var(--line-light); border-radius:4px;
+    padding:26px 22px; position:relative;
+  }
+  .phase-card .ph-num{ font-family:var(--ff-mono); font-size:11px; color:var(--teal-600); letter-spacing:0.08em; }
+  .phase-card h3{ margin-top:12px; font-size:18px; }
+  .phase-card .dur{
+    display:inline-block; margin-top:12px; font-family:var(--ff-mono); font-size:11.5px;
+    padding:4px 10px; background:var(--teal-100); color:var(--teal-600); border-radius:2px;
+  }
+  .phase-card p{ margin-top:14px; font-size:14px; color:var(--ink-700); }
+  .phase-card:nth-child(4) .dur{ background:#F1E6C8; color:var(--gold-500); }
+  .approach-outcome{
+    margin-top:44px; text-align:center; padding:30px; background:var(--navy-900); color:#fff; border-radius:4px;
+  }
+  .approach-outcome strong{ color:var(--teal-300); }
+  @media (max-width:900px){ .phase-grid{ grid-template-columns:1fr 1fr; } }
+  @media (max-width:560px){ .phase-grid{ grid-template-columns:1fr; } }
+
+  /* ---------- Capabilities ---------- */
+  .cap-grid{ display:grid; grid-template-columns:repeat(3,1fr); gap:1px; background:var(--line-light); border:1px solid var(--line-light); margin-top:10px; }
+  .cap-card{ background:var(--paper-50); padding:34px 30px; transition:background .2s ease; }
+  .cap-card:hover{ background:#fff; }
+  .cap-icon{ width:34px; height:34px; color:var(--teal-600); }
+  .cap-card h3{ margin-top:20px; font-size:17px; }
+  .cap-card p{ margin-top:10px; font-size:14px; color:var(--ink-700); }
+  @media (max-width:900px){ .cap-grid{ grid-template-columns:1fr 1fr; } }
+  @media (max-width:560px){ .cap-grid{ grid-template-columns:1fr; } }
+
+  /* ---------- Architecture ---------- */
+  .arch{ background:var(--navy-950); color:#fff; }
+  .arch-grid{ display:grid; grid-template-columns:1fr 0.95fr; gap:60px; align-items:center; }
+  .arch-layers{ display:flex; flex-direction:column; gap:10px; }
+  .arch-layer{
+    display:grid; grid-template-columns:170px 1fr; gap:0;
+    border-radius:3px; overflow:hidden;
+  }
+  .arch-layer .lbl{
+    padding:20px 18px; font-family:var(--ff-mono); font-size:12.5px; font-weight:500;
+    display:flex; align-items:center; color:var(--navy-950); letter-spacing:0.02em;
+  }
+  .arch-layer .desc{
+    padding:20px 20px; background:var(--navy-800); font-size:14px; color:var(--slate-300);
+    display:flex; align-items:center; border:1px solid var(--line-dark); border-left:none;
+  }
+  .arch-layer:nth-child(1) .lbl{ background:var(--teal-500); }
+  .arch-layer:nth-child(2) .lbl{ background:var(--teal-300); }
+  .arch-layer:nth-child(3) .lbl{ background:var(--gold-300); }
+  .arch-layer:nth-child(4) .lbl{ background:#D9DEE2; }
+  .arch-photo{ position:relative; border-radius:6px; overflow:hidden; box-shadow:var(--shadow-1); }
+  .arch-photo img{ width:100%; height:100%; object-fit:cover; filter:saturate(0.85) brightness(0.85); }
+  .arch-photo::after{
+    content:""; position:absolute; inset:0;
+    background:linear-gradient(180deg, rgba(7,15,23,0.1), rgba(7,15,23,0.75));
+  }
+  .arch-photo .cap{
+    position:absolute; left:24px; right:24px; bottom:22px; z-index:2;
+    font-family:var(--ff-display); font-weight:600; font-size:19px; line-height:1.35; color:#fff;
+  }
+  @media (max-width:900px){ .arch-grid{ grid-template-columns:1fr; } .arch-photo{ height:280px; } .arch-layer{ grid-template-columns:130px 1fr;} }
+  @media (max-width:520px){
+    .arch-layer{ grid-template-columns:1fr; }
+    .arch-layer .desc{ border-left:1px solid var(--line-dark); border-top:none; }
+  }
+
+  /* ---------- Strategic fit ---------- */
+  .fit-assets{ display:grid; grid-template-columns:repeat(3,1fr); gap:22px; margin-bottom:66px; }
+  .asset-card{ padding:28px 26px; border:1px solid var(--line-light); border-radius:4px; }
+  .asset-card .tag{ font-family:var(--ff-mono); font-size:11px; color:var(--teal-600); letter-spacing:0.08em; text-transform:uppercase;}
+  .asset-card h3{ margin-top:10px; font-size:17px; }
+  .asset-card p{ margin-top:10px; font-size:14px; color:var(--ink-700); }
+  .why-grid{ display:grid; grid-template-columns:repeat(5,1fr); gap:20px; }
+  .why-card{ text-align:left; }
+  .why-num{ font-family:var(--ff-mono); font-size:12px; color:var(--gold-500); }
+  .why-card h4{ font-size:15.5px; margin-top:10px; font-weight:700; }
+  .why-card p{ margin-top:8px; font-size:13.5px; color:var(--ink-700); }
+  @media (max-width:920px){ .fit-assets{ grid-template-columns:1fr; } .why-grid{ grid-template-columns:1fr 1fr; } }
+  @media (max-width:560px){ .why-grid{ grid-template-columns:1fr; } }
+
+  /* ---------- Team ---------- */
+  .team-grid{ display:grid; grid-template-columns:repeat(3,1fr); gap:26px; }
+  .team-card{ text-align:left; }
+  .team-photo{
+    aspect-ratio:1/1; border-radius:4px; overflow:hidden; position:relative;
+    border:1px solid var(--line-light);
+  }
+  .team-photo img{ width:100%; height:100%; object-fit:cover; filter:grayscale(1) contrast(1.05); }
+  .team-photo::after{ content:""; position:absolute; inset:0; background:linear-gradient(180deg, rgba(23,139,130,0.12), rgba(11,29,43,0.28)); mix-blend-mode:multiply; }
+  .team-card h3{ margin-top:18px; font-size:16.5px; }
+  .team-role{ font-family:var(--ff-mono); font-size:12px; color:var(--teal-600); margin-top:4px; letter-spacing:0.02em; }
+  .team-card p{ margin-top:12px; font-size:13.8px; color:var(--ink-700); }
+  @media (max-width:900px){ .team-grid{ grid-template-columns:1fr 1fr; } }
+  @media (max-width:520px){ .team-grid{ grid-template-columns:1fr; } }
+
+  /* ---------- CTA / Contact ---------- */
+  .cta-section{
+    background:var(--navy-950); color:#fff;
+    background-image:radial-gradient(ellipse 600px 400px at 90% 0%, rgba(37,184,172,0.14), transparent 60%);
+  }
+  .cta-grid{ display:grid; grid-template-columns:1.1fr 0.9fr; gap:70px; }
+  .cta-copy p.lead{ margin-top:18px; color:var(--slate-300); font-size:16.5px; max-width:460px; }
+  .contact-list{ margin-top:34px; display:flex; flex-direction:column; gap:16px; }
+  .contact-list li{ display:flex; gap:14px; align-items:flex-start; font-size:14.5px; color:var(--slate-300); }
+  .contact-list svg{ width:17px; height:17px; color:var(--teal-300); flex-shrink:0; margin-top:2px; }
+  .contact-list a:hover{ color:var(--teal-300); }
+
+  .contact-form{ background:var(--navy-800); border:1px solid var(--line-dark); border-radius:6px; padding:34px; }
+  .contact-form h4{ font-family:var(--ff-mono); font-size:12px; letter-spacing:0.08em; text-transform:uppercase; color:var(--teal-300); font-weight:500; margin-bottom:22px; }
+  .form-row{ display:grid; grid-template-columns:1fr 1fr; gap:14px; }
+  .field{ margin-bottom:16px; }
+  .field label{ display:block; font-family:var(--ff-mono); font-size:11px; color:var(--slate-400); margin-bottom:7px; letter-spacing:0.04em; }
+  .field input, .field textarea, .field select{
+    width:100%; background:var(--navy-900); border:1px solid var(--line-dark); color:#fff;
+    padding:11px 13px; font-family:var(--ff-body); font-size:14px; border-radius:3px;
+    outline:none; transition:border-color .2s ease;
+  }
+  .field input:focus, .field textarea:focus, .field select:focus{ border-color:var(--teal-500); }
+  .field textarea{ resize:vertical; min-height:88px; }
+  .form-note{ font-size:12px; color:var(--slate-400); margin-top:14px; }
+  .form-success{
+    display:none; align-items:center; gap:10px; font-size:13.5px; color:var(--teal-300);
+    font-family:var(--ff-mono); margin-top:14px;
+  }
+  .form-success.show{ display:flex; }
+
+  /* ---------- Footer ---------- */
+  footer{ background:var(--navy-950); border-top:1px solid var(--line-dark); padding:44px 0 30px; }
+  .footer-top{ display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:24px; padding-bottom:30px; border-bottom:1px solid var(--line-dark); }
+  .footer-nav{ display:flex; gap:28px; flex-wrap:wrap; }
+  .footer-nav a{ font-family:var(--ff-mono); font-size:12.5px; color:var(--slate-400); }
+  .footer-nav a:hover{ color:var(--teal-300); }
+  .footer-bottom{ display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:14px; padding-top:22px; font-family:var(--ff-mono); font-size:11.5px; color:var(--slate-400); }
+
+  /* ---------- Reveal on scroll ---------- */
+  .reveal{ opacity:0; transform:translateY(18px); transition:opacity .7s ease, transform .7s ease; }
+  .reveal.in{ opacity:1; transform:translateY(0); }
+
+  /* ---------- Divider ---------- */
+  .hairline{ height:1px; background:var(--line-light); border:none; }
+</style>
+</head>
+<body>
+
+<header id="site-header">
+  <div class="container">
+    <a href="#top" class="brand">
+      <svg class="brand-mark" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <rect width="100" height="100" rx="18" fill="#0B1D2B"/>
+        <path d="M20 68 L20 32 L50 55 L80 32 L80 68" stroke="#25B8AC" stroke-width="8" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+      <span class="brand-word">MINEMECH<span>SOLUTIONS</span></span>
+    </a>
+
+    <nav class="primary-nav" id="primary-nav">
+      <ul>
+        <li><a href="#challenge">Challenge</a></li>
+        <li><a href="#approach">Approach</a></li>
+        <li><a href="#capabilities">Capabilities</a></li>
+        <li><a href="#platform">Platform</a></li>
+        <li><a href="#team">Team</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+
+    <div class="nav-cta">
+      <a href="#contact" class="btn btn-primary">Book a discovery call</a>
+      <button class="nav-toggle" id="nav-toggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="container hero-grid">
+      <div>
+        <div class="eyebrow hero-eyebrow">Gaborone, Botswana &middot; Predictive Maintenance</div>
+        <h1>Turn maintenance data into a <em>warning system</em> for your mine.</h1>
+        <p class="lead">MineMech Solutions helps mining operations move from reactive firefighting to data-led, predictive reliability — combining reliability engineering, vibration-based condition monitoring and ML analytics purpose-built for mining assets.</p>
+        <div class="hero-actions">
+          <a href="#contact" class="btn btn-primary">
+            Book a discovery call
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </a>
+          <a href="#approach" class="btn btn-ghost-dark">See how it works</a>
+        </div>
+        <div class="hero-stats">
+          <div><div class="num">2025</div><div class="lbl">Year founded</div></div>
+          <div><div class="num">100%</div><div class="lbl">Citizen-owned</div></div>
+          <div><div class="num">Mining</div><div class="lbl">Primary focus</div></div>
+        </div>
+      </div>
+
+      <div class="hero-visual reveal">
+        <div class="wave-card">
+          <div class="wave-label"><span>Bearing vibration signal — asset MTR-114</span><span>90-day trend</span></div>
+          <svg viewBox="0 0 460 150" preserveAspectRatio="none">
+            <defs>
+              <linearGradient id="waveGrad" x1="0" y1="0" x2="1" y2="0">
+                <stop offset="0%" stop-color="#E08A5C"/>
+                <stop offset="55%" stop-color="#8DDDD3"/>
+                <stop offset="100%" stop-color="#25B8AC"/>
+              </linearGradient>
+            </defs>
+            <line x1="0" y1="75" x2="460" y2="75" stroke="#1A3A50" stroke-width="1"/>
+            <path d="M0,78 L8,40 L16,105 L24,55 L32,95 L40,35 L48,110 L56,60 L64,90 L72,45 L80,100 L88,58 L96,82 L104,50 L112,88 L120,66 L128,78 L136,68 L144,80 L152,70 L160,77 L168,72 L176,79 L184,73 L192,78 L200,74 L208,77 L216,74 L224,76 L232,74 L240,76 L248,75 L256,80 L264,70 L272,82 L280,68 L288,76 L296,74 L304,77 L312,73 L320,76 L328,74 L336,75.5 L344,74.5 L352,75.5 L360,74.5 L368,75.2 L376,74.8 L384,75.2 L392,74.8 L400,75 L408,75 L416,75 L424,75 L432,75 L440,75 L448,75 L460,75"
+              fill="none" stroke="url(#waveGrad)" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+          <div class="wave-caption">
+            <span class="before">Erratic &middot; unplanned failure risk</span>
+            <span class="after">Stabilised &middot; within baseline envelope</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="strip" aria-hidden="true">
+    <div class="strip-track">
+      <span>Vibration analysis</span><span>Oil condition monitoring</span><span>Failure-mode coding</span><span>Asset hierarchy cleanup</span><span>ML health scoring</span><span>CMMS &amp; historian integration</span><span>RCM-aligned reliability</span>
+      <span>Vibration analysis</span><span>Oil condition monitoring</span><span>Failure-mode coding</span><span>Asset hierarchy cleanup</span><span>ML health scoring</span><span>CMMS &amp; historian integration</span><span>RCM-aligned reliability</span>
+    </div>
+  </div>
+
+  <!-- CHALLENGE -->
+  <section class="section on-light" id="challenge">
+    <div class="container">
+      <div class="section-head reveal">
+        <div class="eyebrow">The challenge</div>
+        <h2>Reactive maintenance in mines drives high costs.</h2>
+        <p>Most mines already collect the data they need — it just isn't structured to warn anyone before something breaks.</p>
+      </div>
+
+      <div class="challenge-cards reveal">
+        <div class="challenge-card">
+          <div class="idx">01</div>
+          <h3>Fragmented condition data</h3>
+          <p>Vibration, temperature and oil-analysis records sit outside the planning system — invisible to decision-makers when it matters most.</p>
+        </div>
+        <div class="challenge-card">
+          <div class="idx">02</div>
+          <h3>Unreliable CMMS history</h3>
+          <p>Work orders exist, but inconsistent failure codes, weak asset hierarchy and missing context render historical data unfit for modelling.</p>
+        </div>
+        <div class="challenge-card">
+          <div class="idx">03</div>
+          <h3>Reactive execution cycle</h3>
+          <p>Breakdowns, emergency overtime and urgent spares dominate operations — eroding margins, compromising safety and blocking planned production.</p>
+        </div>
+      </div>
+
+      <div class="challenge-foot reveal">Without structure, data stays as <span>evidence after failure</span> — not <span>intelligence before failure.</span></div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="section on-light" id="about" style="padding-top:0;">
+    <div class="container">
+      <hr class="hairline" style="margin-bottom:100px;">
+      <div class="about-grid">
+        <div class="reveal">
+          <div class="eyebrow">Who we are</div>
+          <h2 style="margin-top:14px;">Botswana's predictive maintenance partner for mining assets.</h2>
+          <div class="about-copy">
+            <p>Incorporated in 2025 as a 100% citizen-owned Botswana company, MineMech Solutions was founded to solve a persistent problem across Southern Africa's mining sector: the gap between abundant maintenance data and actionable predictive intelligence.</p>
+            <p>We combine reliability engineering, vibration-based condition monitoring, computational modelling and ML analytics to help mines transition from reactive firefighting to data-led, predictive operations.</p>
+            <p>Our approach is intentionally practical: start with the asset data reality, clean the foundation, build usable analytics, then scale toward a full predictive platform.</p>
+          </div>
+          <div class="stat-row">
+            <div class="stat-box"><div class="num">2025</div><div class="lbl">Year founded</div></div>
+            <div class="stat-box"><div class="num">100%</div><div class="lbl">Citizen-owned</div></div>
+            <div class="stat-box"><div class="num">Mining</div><div class="lbl">Primary focus</div></div>
+          </div>
+        </div>
+
+        <div class="about-panel reveal">
+          <h4>How we work with a site</h4>
+          <ol>
+            <li><strong>Start with the data reality.</strong> Map what exists across sensors, historians, CMMS and manual logs before proposing anything.</li>
+            <li><strong>Clean the foundation.</strong> Fix the asset hierarchy and failure coding — the unglamorous work every model depends on.</li>
+            <li><strong>Build usable analytics.</strong> Baselines, alerts and health scores your team can act on from day one.</li>
+            <li><strong>Scale deliberately.</strong> Expand asset coverage and governance once the pilot proves out.</li>
+          </ol>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- APPROACH -->
+  <section class="section approach" id="approach">
+    <div class="container">
+      <div class="section-head reveal">
+        <div class="eyebrow on-light">Our solution</div>
+        <h2>The MineMech PdM Launchpad: a structured path to predictive reliability.</h2>
+        <p>A phased route from an uncertain asset-data reality to a governed predictive platform — deliberately paced so trust is earned at every stage.</p>
+      </div>
+
+      <svg class="timeline-wave reveal" viewBox="0 0 1180 60" preserveAspectRatio="none">
+        <path d="M0,30 L20,10 L40,50 L60,15 L80,45 L100,20 L120,42 L140,25 L160,38 L180,28 L200,34 L220,29 L240,32 L260,30 L280,32 L300,29 L320,31 L340,30 L360,31 L380,29.5 L400,30.5 L420,30 L440,30.3 L460,29.8 L480,30.2 L500,29.9 L520,30.1 L540,30 L560,30.1 L580,29.9 L600,30 L1180,30"
+          fill="none" stroke="#25B8AC" stroke-width="1.6" stroke-linecap="round" opacity="0.55"/>
+        <circle cx="0" cy="30" r="4" fill="#E08A5C"/>
+        <circle cx="393" cy="30" r="4" fill="#25B8AC"/>
+        <circle cx="786" cy="30" r="4" fill="#25B8AC"/>
+        <circle cx="1176" cy="30" r="4" fill="#178B82"/>
+      </svg>
+
+      <div class="phase-grid reveal">
+        <div class="phase-card">
+          <div class="ph-num">Phase 01</div>
+          <h3>Discovery &amp; Baseline Assessment</h3>
+          <span class="dur">2–4 months</span>
+          <p>Asset scope, data map, gap register and pilot success criteria defined.</p>
+        </div>
+        <div class="phase-card">
+          <div class="ph-num">Phase 02</div>
+          <h3>System Design</h3>
+          <span class="dur">4–12 months</span>
+          <p>Hierarchy cleanup, failure coding, data pipelines and baseline dashboards.</p>
+        </div>
+        <div class="phase-card">
+          <div class="ph-num">Phase 03</div>
+          <h3>Pilot Implementation</h3>
+          <span class="dur">12–18 months</span>
+          <p>Asset health scores, anomaly alerts, ML model validation and user feedback.</p>
+        </div>
+        <div class="phase-card">
+          <div class="ph-num">Phase 04</div>
+          <h3>Scale-Up &amp; Governance</h3>
+          <span class="dur">Ongoing</span>
+          <p>Expanded assets, full platform integration, training and operational governance.</p>
+        </div>
+      </div>
+
+      <div class="approach-outcome reveal">
+        Outcome: a <strong>gold-standard dataset</strong> for critical assets and a proven, phased route to full predictive analytics deployment.
+      </div>
+    </div>
+  </section>
+
+  <!-- CAPABILITIES -->
+  <section class="section on-light" id="capabilities">
+    <div class="container">
+      <div class="section-head reveal">
+        <div class="eyebrow">Capabilities</div>
+        <h2>End-to-end services, from data readiness to full analytics.</h2>
+        <p>Every engagement is scoped from where your data actually is today, not where a platform vendor wishes it were.</p>
+      </div>
+
+      <div class="cap-grid reveal">
+        <div class="cap-card">
+          <svg class="cap-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M3 12h4l3 8 4-16 3 8h4"/></svg>
+          <h3>Predictive Maintenance Advisory</h3>
+          <p>Maintenance maturity review, critical-asset selection, pilot scoping and a prioritised improvement roadmap aligned to mine objectives.</p>
+        </div>
+        <div class="cap-card">
+          <svg class="cap-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 4h16v16H4z"/><path d="M4 9h16M9 9v11"/></svg>
+          <h3>Data-Readiness Audits</h3>
+          <p>Sensor, historian, CMMS, ERP and manual-data assessment with a comprehensive data quality and gap register.</p>
+        </div>
+        <div class="cap-card">
+          <svg class="cap-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M3 6h18M3 12h18M3 18h10"/></svg>
+          <h3>Asset Hierarchy Cleanup</h3>
+          <p>Equipment hierarchy rationalisation, naming standards, tag alignment and criticality structuring for model-ready data.</p>
+        </div>
+        <div class="cap-card">
+          <svg class="cap-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg>
+          <h3>Failure-Mode Coding</h3>
+          <p>Documented failure modes, symptoms, causes, consequences and standardised coding for analytics and RCM alignment.</p>
+        </div>
+        <div class="cap-card">
+          <svg class="cap-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M2 12h4l2-7 4 14 3-9 2 4h5"/></svg>
+          <h3>Condition-Monitoring Analytics</h3>
+          <p>Vibration, temperature, oil and process-data baselines, trend analysis and alert rationalisation for early fault detection.</p>
+        </div>
+        <div class="cap-card">
+          <svg class="cap-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="6" cy="18" r="2.4"/><circle cx="18" cy="6" r="2.4"/><circle cx="18" cy="18" r="2.4"/><path d="M8.2 17 15.8 8M15.8 15.6v.01M8.2 18h5.4"/></svg>
+          <h3>ML Models &amp; Dashboards</h3>
+          <p>Model development, asset health scores, risk ranking, operational dashboards and full handover to the maintenance team.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PLATFORM ARCHITECTURE -->
+  <section class="section arch" id="platform">
+    <div class="container arch-grid">
+      <div class="reveal">
+        <div class="eyebrow on-dark">Platform architecture</div>
+        <h2 style="margin-top:14px;">Scalable architecture for fixed &amp; mobile mining assets.</h2>
+        <p style="color:var(--slate-300); margin-top:14px; margin-bottom:34px; max-width:480px;">Built for real-time condition monitoring and asset health scoring — from raw signal to a decision your planners can act on.</p>
+
+        <div class="arch-layers">
+          <div class="arch-layer">
+            <div class="lbl">Data Sources</div>
+            <div class="desc">PLC / SCADA / historians &middot; ERP / CMMS / MIS &middot; sensors, IoT &amp; manual inputs</div>
+          </div>
+          <div class="arch-layer">
+            <div class="lbl">Integration Layer</div>
+            <div class="desc">Connectors, tag mapping, polling, validation and data quality rules</div>
+          </div>
+          <div class="arch-layer">
+            <div class="lbl">Analytics Layer</div>
+            <div class="desc">Baseline envelopes, anomaly detection, RUL models, failure-likelihood scoring</div>
+          </div>
+          <div class="arch-layer">
+            <div class="lbl">Decision Layer</div>
+            <div class="desc">Dashboards, alerts, recommendations and work-order decision support</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="arch-photo reveal">
+        <img src="assets/images/control-room.jpg" alt="Reliability engineer monitoring live condition-monitoring dashboards" loading="lazy" width="800" height="600">
+        <div class="cap">Built for real-time condition monitoring and asset health scoring.</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- STRATEGIC FIT -->
+  <section class="section on-light" id="fit">
+    <div class="container">
+      <div class="section-head reveal">
+        <div class="eyebrow">Strategic fit</div>
+        <h2>Purpose-built for your mine's asset environment.</h2>
+      </div>
+
+      <div class="fit-assets reveal">
+        <div class="asset-card">
+          <div class="tag">Fixed plant</div>
+          <h3>Conveyors, crushers &amp; process motors</h3>
+          <p>Conveyors, crushers, screens, pumps, fans, compressors and process motors.</p>
+        </div>
+        <div class="asset-card">
+          <div class="tag">Mobile equipment</div>
+          <h3>Haul trucks, loaders &amp; drills</h3>
+          <p>Haul trucks, loaders, drills, auxiliary fleets and high-value rotating assemblies.</p>
+        </div>
+        <div class="asset-card">
+          <div class="tag">Utilities &amp; services</div>
+          <h3>Energy, water &amp; ventilation</h3>
+          <p>Energy meters, water systems, ventilation, environmental monitoring and support equipment.</p>
+        </div>
+      </div>
+
+      <div class="section-head reveal" style="margin-bottom:34px;">
+        <div class="eyebrow">Why MineMech</div>
+        <h2 style="font-size:26px;">Five reasons mines choose to build with us.</h2>
+      </div>
+
+      <div class="why-grid reveal">
+        <div class="why-card"><div class="why-num">01</div><h4>Mining Focused</h4><p>Built around mining assets, processing plants and mixed heavy-equipment environments — not generic industry software.</p></div>
+        <div class="why-card"><div class="why-num">02</div><h4>Engineering-Led</h4><p>Combines asset physics, reliability methods and data analytics rather than treating PdM as a software-only problem.</p></div>
+        <div class="why-card"><div class="why-num">03</div><h4>Data Foundation First</h4><p>Model performance depends on asset hierarchy, failure coding, tag quality and historical context — so we start there.</p></div>
+        <div class="why-card"><div class="why-num">04</div><h4>Implementation-Ready</h4><p>Can support pilots, data readiness, ML models and full platform deployment without prolonged procurement cycles.</p></div>
+        <div class="why-card"><div class="why-num">05</div><h4>Botswana Incorporated</h4><p>100% citizen-owned, locally registered — directly supporting local content and procurement objectives.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TEAM -->
+  <section class="section on-light" id="team" style="background:var(--paper-100);">
+    <div class="container">
+      <div class="section-head reveal">
+        <div class="eyebrow">Our team</div>
+        <h2>A lean specialist team across reliability, engineering and finance.</h2>
+      </div>
+
+      <div class="team-grid reveal">
+        <div class="team-card">
+          <div class="team-photo"><img src="assets/images/team-kenanao.jpg" alt="Dr Kenanao Sithole" loading="lazy" width="400" height="400"></div>
+          <h3>Dr Kenanao Sithole</h3>
+          <div class="team-role">Technical Lead</div>
+          <p>Mechanical engineer specialising in CFD, FEA and thermomechanical modelling. Brings engineering design, validation, technical reporting and industry-facing simulation expertise.</p>
+        </div>
+        <div class="team-card">
+          <div class="team-photo"><img src="assets/images/team-calvin.jpg" alt="Dr Calvin Stephen" loading="lazy" width="400" height="400"></div>
+          <h3>Dr Calvin Stephen</h3>
+          <div class="team-role">Reliability &amp; PdM Lead</div>
+          <p>Reliability engineer with doctoral research in vibration-based condition monitoring, predictive maintenance, ML diagnostics, FMECA, RCA and ISO-aligned systems.</p>
+        </div>
+        <div class="team-card">
+          <div class="team-photo"><img src="assets/images/team-thero.jpg" alt="Thero Kgari" loading="lazy" width="400" height="400"></div>
+          <h3>Thero Kgari</h3>
+          <div class="team-role">Finance Lead</div>
+          <p>Responsible for accounting, commercial controls, pricing support, statutory compliance and financial administration.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA / CONTACT -->
+  <section class="section cta-section" id="contact">
+    <div class="container cta-grid">
+      <div class="cta-copy reveal">
+        <div class="eyebrow on-dark">Ready to deliver</div>
+        <h2 style="margin-top:14px;">Partner with MineMech to transform your mine.</h2>
+        <p class="lead">MineMech brings Botswana-local expertise, doctoral-grade research, proven ML models and a structured delivery methodology — purpose-built for mining environments. We're committed to a platform that reduces unplanned downtime and strengthens your maintenance intelligence for years to come.</p>
+
+        <ul class="contact-list">
+          <li>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M4 4h16v16H4z"/><path d="m4 6 8 7 8-7"/></svg>
+            <a href="mailto:info@minemech.co.bw">info@minemech.co.bw</a>
+          </li>
+          <li>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M3 5c0 9 7 16 16 16l2-4-6-2-2 2c-3-1-5-3-6-6l2-2-2-6z"/></svg>
+            <span>WhatsApp: <a href="https://wa.me/26774770289">+267 74 770 289</a> &middot; <a href="https://wa.me/26774213553">+267 74 213 553</a></span>
+          </li>
+          <li>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M12 21s7-6.5 7-11a7 7 0 1 0-14 0c0 4.5 7 11 7 11z"/><circle cx="12" cy="10" r="2.4"/></svg>
+            <span>Plot 27906, Lerula Crescent Block 3, Gaborone, Botswana<br>PO Box 500492, Gaborone</span>
+          </li>
+        </ul>
+      </div>
+
+      <form class="contact-form reveal" id="contact-form">
+        <h4>Start a conversation</h4>
+        <div class="form-row">
+          <div class="field">
+            <label for="fname">Full name</label>
+            <input id="fname" name="fname" type="text" required placeholder="Your name">
+          </div>
+          <div class="field">
+            <label for="company">Company</label>
+            <input id="company" name="company" type="text" placeholder="Mine / organisation">
+          </div>
+        </div>
+        <div class="field">
+          <label for="email">Email</label>
+          <input id="email" name="email" type="email" required placeholder="you@company.com">
+        </div>
+        <div class="field">
+          <label for="interest">I'm interested in</label>
+          <select id="interest" name="interest">
+            <option>Predictive Maintenance Advisory</option>
+            <option>Data-Readiness Audit</option>
+            <option>Asset Hierarchy Cleanup</option>
+            <option>Condition-Monitoring Analytics</option>
+            <option>ML Models &amp; Dashboards</option>
+            <option>Something else</option>
+          </select>
+        </div>
+        <div class="field">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" placeholder="Tell us a little about your site and current maintenance setup"></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary" style="width:100%; justify-content:center;">
+          Send message
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </button>
+        <p class="form-note">Submitting opens your email client addressed to info@minemech.co.bw with your message pre-filled.</p>
+        <div class="form-success" id="form-success">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg>
+          Opening your email client…
+        </div>
+      </form>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="container">
+    <div class="footer-top">
+      <a href="#top" class="brand">
+        <svg class="brand-mark" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect width="100" height="100" rx="18" fill="#0B1D2B"/>
+          <path d="M20 68 L20 32 L50 55 L80 32 L80 68" stroke="#25B8AC" stroke-width="8" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        <span class="brand-word">MINEMECH<span>SOLUTIONS</span></span>
+      </a>
+      <nav class="footer-nav">
+        <a href="#challenge">Challenge</a>
+        <a href="#approach">Approach</a>
+        <a href="#capabilities">Capabilities</a>
+        <a href="#platform">Platform</a>
+        <a href="#team">Team</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; 2026 MineMech Solutions Proprietary Limited. All rights reserved.</span>
+      <span>Gaborone, Botswana &middot; info@minemech.co.bw</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+  // Sticky header state
+  const header = document.getElementById('site-header');
+  window.addEventListener('scroll', () => {
+    header.classList.toggle('scrolled', window.scrollY > 40);
+  }, { passive: true });
+
+  // Mobile nav toggle
+  const navToggle = document.getElementById('nav-toggle');
+  const primaryNav = document.getElementById('primary-nav');
+  navToggle.addEventListener('click', () => primaryNav.classList.toggle('open'));
+  primaryNav.querySelectorAll('a').forEach(a => a.addEventListener('click', () => primaryNav.classList.remove('open')));
+
+  // Scroll reveal
+  const revealEls = document.querySelectorAll('.reveal');
+  if ('IntersectionObserver' in window) {
+    const io = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('in');
+          io.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
+    revealEls.forEach(el => io.observe(el));
+  } else {
+    revealEls.forEach(el => el.classList.add('in'));
+  }
+
+  // Contact form -> mailto
+  const form = document.getElementById('contact-form');
+  const success = document.getElementById('form-success');
+  form.addEventListener('submit', function(e){
+    e.preventDefault();
+    const fname = form.fname.value.trim();
+    const company = form.company.value.trim();
+    const email = form.email.value.trim();
+    const interest = form.interest.value;
+    const message = form.message.value.trim();
+
+    const subject = encodeURIComponent(`Enquiry from ${fname || 'website visitor'} — ${interest}`);
+    const bodyLines = [
+      `Name: ${fname}`,
+      `Company: ${company}`,
+      `Email: ${email}`,
+      `Interested in: ${interest}`,
+      '',
+      message
+    ];
+    const body = encodeURIComponent(bodyLines.join('\n'));
+    window.location.href = `mailto:info@minemech.co.bw?subject=${subject}&body=${body}`;
+    success.classList.add('show');
+  });
+</script>
+
+</body>
+</html>
